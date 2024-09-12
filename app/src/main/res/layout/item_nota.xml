@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/redondeo"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleoutput"
+        android:layout_width="387dp"
+        android:layout_height="59dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck"
+        tools:text="My title" />
+
+    <TextView
+        android:id="@+id/descriptionoutput"
+        android:layout_width="397dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/titleoutput"
+        android:layout_marginTop="14dp"
+        android:textColor="#393939"
+        tools:text="My long long long descrption" />
+
+    <ImageButton
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/titleoutput"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/escriba_su_texto"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- ImageButton para abrir el panel de colores -->
+    <ImageButton
+        android:id="@+id/btnOpenColorPicker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="22dp"
+        android:layout_toStartOf="@+id/btnEliminar"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/paleta"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</RelativeLayout>
